@@ -8,6 +8,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 :root {
@@ -35,6 +36,20 @@ nav {
   padding: 3rem 3.8rem 1rem;
 }
 
+
+.slidebar{
+  height: 100vh;
+  width: 27vw;
+  background-color: grey;
+  position: absolute;
+  top: 0px;
+  right: -30vw;
+  transition: linear .2s;
+  overflow-x: hidden;
+  z-index: 90;
+}
+
+
 .page1 {
   width: 100%;
   height: 48rem;
@@ -57,13 +72,20 @@ nav {
   border-radius: 100px;
   right: 65px;
   position: fixed;
-  z-index: 999;
+  z-index: 100;
+  color: white;
+  transition: linear .3s;
 }
 
 .ri-menu-line {
-  color: white;
   font-size: 22px;
 }
+
+.menu:hover{
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+
 
 .page1-box {
   width: 19rem;
@@ -171,6 +193,8 @@ nav {
   padding: 4rem 7rem;
 }
 
+
+
 .page2-nav {
   width: 100%;
   height: 10%;
@@ -218,6 +242,8 @@ nav {
   line-height: 30px;
   word-spacing: 1.4px;
 }
+
+
 
 .page2-spinner {
   margin-top: 1.5rem;
@@ -471,6 +497,7 @@ nav {
 }
 
 .page6-inner {
+  position: relative;
   width: 100%;
   height: 65%;
   margin: 5rem 0px;
@@ -480,6 +507,7 @@ nav {
   justify-content: start;
   align-items: start;
   gap: 1.5rem;
+  overflow: hidden;
 }
 
 .page6-inner-box {
@@ -491,6 +519,46 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+
+.xxx1{
+  position: relative;
+  left: -10vw;
+  transition: linear .3s;
+}
+
+.xxx2{
+  position: relative;
+  bottom: -10vw;
+  transition: linear .3s;
+}
+
+.xxx3{
+  position: relative;
+  top: -10vw;
+  transition: linear .3s;
+}
+
+.xxx4{
+  position: relative;
+  right: -10vw;
+  transition: linear .3s;
+}
+
+
+.xxx5{
+  position: relative;
+  left: -10vw;
+  transition: linear .3s;
+}
+
+.xxx6{
+  position: relative;
+  bottom: -10vw;
+  transition: linear .3s;
+}
+
+
+
 
 .page6-inner-box:nth-child(5) {
   width: 11rem;
@@ -1040,6 +1108,11 @@ textarea {
 
 
 @media (max-width: 800px) {
+
+.slidebar{
+  display: none;
+}
+
   #main {
     padding: 1rem 2px;
   }
