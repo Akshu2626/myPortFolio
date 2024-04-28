@@ -1141,7 +1141,7 @@ textarea {
 
 .page8{
   padding: 1rem;
-  height: 100rem;
+  height: 110rem;
 }
 
 .page8-box{
@@ -1152,8 +1152,8 @@ textarea {
   padding: 20px 10px;
 }
 .page8-inner-box{
-  width: 36vw;  
-  gap: 4rem;
+  width: 30vw;  
+  gap: 2rem;
 }
 .page8-inner-box img{
   width: 100%;
