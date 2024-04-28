@@ -523,38 +523,38 @@ nav {
 .xxx1{
   position: relative;
   left: -10vw;
-  transition: linear .3s;
+  transition: linear .5s;
 }
 
 .xxx2{
   position: relative;
   bottom: -10vw;
-  transition: linear .3s;
+  transition: linear .5s;
 }
 
 .xxx3{
   position: relative;
   top: -10vw;
-  transition: linear .3s;
+  transition: linear .5s;
 }
 
 .xxx4{
   position: relative;
   right: -10vw;
-  transition: linear .3s;
+  transition: linear .5s;
 }
 
 
 .xxx5{
   position: relative;
   left: -10vw;
-  transition: linear .3s;
+  transition: linear .5s;
 }
 
 .xxx6{
   position: relative;
   bottom: -10vw;
-  transition: linear .3s;
+  transition: linear .5s;
 }
 
 

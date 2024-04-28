@@ -61,7 +61,7 @@ page6.addEventListener('mouseenter', () => {
     xxx5.style.left = `0vw`
     xxx6.style.bottom = `0vw`
     page6.addEventListener('mouseleave', () => {
-        xxx1.style.left = `-10vw`
+        // xxx1.style.left = `-10vw`
         xxx2.style.bottom`-10vw`
         xxx3.style.top = `-10vw`
         xxx4.style.right = `-10vw`
