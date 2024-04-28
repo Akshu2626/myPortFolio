@@ -1036,6 +1036,8 @@ textarea {
 
   .page2{
     padding: 1rem;
+    height: 60rem;
+    
   }
 
   .page2-heading{
@@ -1189,3 +1191,78 @@ textarea {
 
 }
 
+@media (max-width: 305px) {
+  .page2{
+    height: 70rem;
+    /* background-color: red; */
+  }
+
+
+  .page4-gap{
+    width: 1rem;
+  }
+
+  .page2-nav{
+    height: 3%;
+  }
+
+.page5{
+  height: 60rem;
+}
+
+.page5-box{
+  padding: 2px 10px;
+}
+
+.page6{
+  height: 60rem;
+}
+
+.page6-inner-box{
+  width: 6rem;
+  height: 15rem;
+}
+
+.page6-inner-box:nth-child(5) {
+  width: 6rem;
+}
+.page6-inner-box:nth-child(6) {
+  width: 6rem;
+}
+
+.page7-box1{
+  padding: 5px 10px;
+}
+
+.page8{
+  height: 105rem;
+}
+
+.page8-inner-box{
+  width: 5rem;
+}
+
+.page9{
+  height: 100rem;
+}
+
+.page9-box{
+  height: 85rem;
+}
+
+.page9-box1{
+  padding: 0px;
+}
+
+.page9-navbox{
+  font-size: .7rem;
+}
+.page9-nav2 h1{
+  font-size: 2rem;
+}
+
+.page9-a{
+  height: 40rem;
+}
+
+}
