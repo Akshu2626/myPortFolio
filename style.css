@@ -1184,7 +1184,7 @@ textarea {
 
 .page6{
   padding: 1rem;
-  height: 70rem;
+  height: 100rem;
 }
 
 .page6-inner{
@@ -1204,7 +1204,7 @@ textarea {
 
 .page7{
   padding: 1rem;
-  margin-top: 15rem;
+  margin-top: 1rem;
 }
 
 .page7-box-inner img{
@@ -1282,9 +1282,14 @@ textarea {
 
 @media (max-width: 370px) {
   .page2{
-    height: 70rem;
+    height: 60rem;
     /* background-color: red; */
   }
+
+
+.page3{
+  height: 50rem;
+}
 
 
   .page4-gap{
@@ -1304,7 +1309,7 @@ textarea {
 }
 
 .page6{
-  height: 60rem;
+  height: 80rem;
 }
 
 .page6-inner-box{

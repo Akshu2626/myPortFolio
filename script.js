@@ -10,6 +10,27 @@ let xxx4 = document.querySelector('.xxx4');
 let xxx5 = document.querySelector('.xxx5');
 let xxx6 = document.querySelector('.xxx6');
 
+
+let countVaribale = document.querySelector('.contant-var');
+let pageleft = document.querySelector('#page8-left');
+let pageright = document.querySelector('#page8-right');
+let pageCounter = 1;
+
+let page8pic = document.querySelector('#page8-pic');
+let page8name = document.querySelector('.page8-name');
+let page8pos = document.querySelector('.page8-pos');
+let page8com = document.querySelector('#page8-com');
+let pageContentt = document.querySelector('.page8-content');
+
+
+let _data = [
+    [],
+    ['https://framerusercontent.com/images/0Ky7LYRnlV1iS8GX2KQ9RIF4WUM.jpg', 'Pablo Dybala', 'CEO of', 'IBM Global', '“Drake - A Developer with the creativity, professional and master of code. Much more than what i\'m expect. High quality product & flexiable price. Recommended!.”'],
+    ['https://framerusercontent.com/images/gp4hZGj7A40koYej2r2J1hUuIoI.jpg', 'Christina Morillo', 'Project Management Of ', 'Invasion App Inc', '“Drake was a real pleasure to work with and we look forward to working with him again. He\'s definitely the kind of designer that you can trust with any project from A-Z.”'],
+    ['https://framerusercontent.com/images/eclSLKFZL20IBMG7WH0bRYkQgw.jpg', 'Phil Foden', 'Director Of ', 'Envato LLC', '“Extremely profressional and fast service!. Drake is a master of code and he also very creative. We done 3 projects with him and certain will continue.”']
+];
+
+
 page2.addEventListener('mouseenter', () => {
     let counter1 = document.querySelector('.page2-anim-h4');
     let counter2 = document.querySelector('.page2-anim-h5');
@@ -35,7 +56,6 @@ page2.addEventListener('mouseenter', () => {
     })
 })
 
-
 let flag = false;
 menu.addEventListener('click', () => {
     // flag = !flag ? menu.innerHTML = `<i class="ri-close-line"></i>` : menu.innerHTML = `<i class="ri-menu-line"></i>`
@@ -50,8 +70,6 @@ menu.addEventListener('click', () => {
         flag = false;
     }
 })
-
-
 
 page6.addEventListener('mouseenter', () => {
     xxx1.style.left = `0vw`
@@ -71,6 +89,17 @@ page6.addEventListener('mouseenter', () => {
 })
 
 
+pageright.addEventListener('click', () => {
+    pageCounter++;
+    if (pageCounter <= 3) {
+        countVaribale.innerHTML = pageCounter
+        page8pic.innerHTML = `<img src="${_data[pageCounter][0]}" alt="">`
+        page8name.innerHTML = _data[pageCounter][1]
+        // page8pos.innerHTML = _data[pageCounter][2];
+        page8pos.innerHTML = `${_data[pageCounter][2]} <span class="page2-heading-inner" id="page8-com">${_data[pageCounter][3]}</span>`;
+        pageContentt.innerHTML = `${_data[pageContentt][4]}`
+    }
 
+})
 
 
