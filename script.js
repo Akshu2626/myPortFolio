@@ -25,8 +25,8 @@ let pageContentt = document.querySelector('.page8-boxx');
 
 let _data = [
     [],
-    ['https://framerusercontent.com/images/0Ky7LYRnlV1iS8GX2KQ9RIF4WUM.jpg', 'Pablo Dybala', 'CEO of', 'IBM Global', '“Drake - A Developer with the creativity, professional and master of code. Much more than what i\'m expect. High quality product & flexiable price. Recommended!.”'],
-    ['https://framerusercontent.com/images/gp4hZGj7A40koYej2r2J1hUuIoI.jpg', 'Christina Morillo', 'Project Management Of ', 'Invasion App Inc', '“Drake was a real pleasure to work with and we look forward to working with him again. He\'s definitely the kind of designer that you can trust with any project from A-Z.”'],
+    ['https://framerusercontent.com/images/0Ky7LYRnlV1iS8GX2KQ9RIF4WUM.jpg', 'Pablo Dybala', 'CEO of', 'IBM Global', '“Akshu - A Developer with the creativity, professional and master of code. Much more than what i\'m expect. High quality product & flexiable price. Recommended!.”'],
+    ['https://framerusercontent.com/images/gp4hZGj7A40koYej2r2J1hUuIoI.jpg', 'Christina Morillo', 'Project Management Of ', 'Invasion App Inc', '“Akshu was a real pleasure to work with and we look forward to working with him again. He\'s definitely the kind of designer that you can trust with any project from A-Z.”'],
     ['https://framerusercontent.com/images/eclSLKFZL20IBMG7WH0bRYkQgw.jpg', 'Phil Foden', 'Director Of ', 'Envato LLC', '“Extremely profressional and fast service!. Drake is a master of code and he also very creative. We done 3 projects with him and certain will continue.”']
 ];
 
