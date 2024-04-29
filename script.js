@@ -23,13 +23,23 @@ let page8com = document.querySelector('#page8-com');
 let pageContentt = document.querySelector('.page8-boxx');
 
 
+const loadingpage=document.querySelector('.loading-page');
+
+
+setTimeout(() => {
+    loadingpage.style.top = '-100%';
+}, 3000);
+
+
+
+
+
 let _data = [
     [],
     ['https://framerusercontent.com/images/0Ky7LYRnlV1iS8GX2KQ9RIF4WUM.jpg', 'Pablo Dybala', 'CEO of', 'IBM Global', '“Akshu - A Developer with the creativity, professional and master of code. Much more than what i\'m expect. High quality product & flexiable price. Recommended!.”'],
     ['https://framerusercontent.com/images/gp4hZGj7A40koYej2r2J1hUuIoI.jpg', 'Christina Morillo', 'Project Management Of ', 'Invasion App Inc', '“Akshu was a real pleasure to work with and we look forward to working with him again. He\'s definitely the kind of designer that you can trust with any project from A-Z.”'],
     ['https://framerusercontent.com/images/eclSLKFZL20IBMG7WH0bRYkQgw.jpg', 'Phil Foden', 'Director Of ', 'Envato LLC', '“Extremely profressional and fast service!. Akshu is a master of code and he also very creative. We done 3 projects with him and certain will continue.”']
 ];
-
 
 page2.addEventListener('mouseenter', () => {
     let counter1 = document.querySelector('.page2-anim-h4');
@@ -49,7 +59,7 @@ page2.addEventListener('mouseenter', () => {
         if (count >= 182) {
             clearInterval(interval2);
         }
-    }, 10);
+    }, 5);
     page2.addEventListener('mouseleave', () => {
         counter1 = counter;
         counter2 = count;
@@ -79,7 +89,6 @@ page6.addEventListener('mouseenter', () => {
     xxx5.style.left = `0vw`
     xxx6.style.bottom = `0vw`
     page6.addEventListener('mouseleave', () => {
-        // xxx1.style.left = `-10vw`
         xxx2.style.bottom`-10vw`
         xxx3.style.top = `-10vw`
         xxx4.style.right = `-10vw`
@@ -88,16 +97,28 @@ page6.addEventListener('mouseenter', () => {
     })
 })
 
-
 pageright.addEventListener('click', () => {
-    pageCounter++;
-    if (pageCounter <= 3) {
+    if (pageCounter <= 2) {
+        pageCounter++;
         countVaribale.innerHTML = pageCounter
         page8pic.innerHTML = `<img src="${_data[pageCounter][0]}" alt="">`
         page8name.innerHTML = _data[pageCounter][1]
         page8pos.innerHTML = `${_data[pageCounter][2]} <span class="page2-heading-inner" id="page8-com">${_data[pageCounter][3]}</span>`;
         pageContentt.innerHTML = `<p class="page8-content" id="page8-content1"> ${_data[pageCounter][4]} </p>`
     }
+
+
+    pageleft.addEventListener('click', () => {
+        pageCounter--;
+        if (pageCounter > 0) {
+            countVaribale.innerHTML = pageCounter
+            page8pic.innerHTML = `<img src="${_data[pageCounter][0]}" alt="">`
+            page8name.innerHTML = _data[pageCounter][1]
+            page8pos.innerHTML = `${_data[pageCounter][2]} <span class="page2-heading-inner" id="page8-com">${_data[pageCounter][3]}</span>`;
+            pageContentt.innerHTML = `<p class="page8-content" id="page8-content1"> ${_data[pageCounter][4]} </p>`
+        }
+    })
+
 
 })
 
