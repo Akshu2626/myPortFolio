@@ -20,7 +20,7 @@ let page8pic = document.querySelector('#page8-pic');
 let page8name = document.querySelector('.page8-name');
 let page8pos = document.querySelector('.page8-pos');
 let page8com = document.querySelector('#page8-com');
-let pageContentt = document.querySelector('.page8-content');
+let pageContentt = document.querySelector('.page8-boxx');
 
 
 let _data = [
@@ -95,9 +95,8 @@ pageright.addEventListener('click', () => {
         countVaribale.innerHTML = pageCounter
         page8pic.innerHTML = `<img src="${_data[pageCounter][0]}" alt="">`
         page8name.innerHTML = _data[pageCounter][1]
-        // page8pos.innerHTML = _data[pageCounter][2];
         page8pos.innerHTML = `${_data[pageCounter][2]} <span class="page2-heading-inner" id="page8-com">${_data[pageCounter][3]}</span>`;
-        pageContentt.innerHTML = `${_data[pageContentt][4]}`
+        pageContentt.innerHTML = `<p class="page8-content" id="page8-content1"> ${_data[pageCounter][4]} </p>`
     }
 
 })
