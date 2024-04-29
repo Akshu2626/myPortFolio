@@ -133,7 +133,6 @@ nav {
 }
 
 .menu-inner a:hover {
-  /* background-color: red; */
   color: gainsboro;
 }
 
@@ -160,6 +159,10 @@ nav {
   font-size: 1.2rem;
   color: gray;
   font-weight: 300;
+}
+
+.social-box a{
+  text-decoration: none;
 }
 
 .social-box i:hover {
@@ -246,6 +249,16 @@ nav {
   color: gray;
   transition: linear 0.3s;
 }
+
+.box a {
+  text-decoration: none;
+  color: gray;
+}
+
+.box i:hover {
+  color: var(--main-color);
+}
+
 .box i {
   font-size: 1.3rem;
 }
@@ -1292,22 +1305,22 @@ textarea {
     width: 9rem;
   }
 
-  .xxx1{
+  .xxx1 {
     left: 0vw;
   }
-  .xxx2{
+  .xxx2 {
     bottom: 0vw;
   }
-  .xxx3{
+  .xxx3 {
     top: 0vw;
   }
-  .xxx4{
+  .xxx4 {
     right: 0vw;
   }
-  .xxx5{
+  .xxx5 {
     left: 0vw;
   }
-  .xxx6{
+  .xxx6 {
     bottom: 0vw;
   }
 
