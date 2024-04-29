@@ -296,6 +296,15 @@ nav {
   margin-bottom: 3rem;
 }
 
+.page1-btn a{
+  text-decoration: none;
+  color: var(--secon-color);
+}
+
+.page1-btn a:hover{
+  color: var(--main-color);
+}
+
 .page1-btn i {
   font-size: 22px;
   margin-right: 10px;
