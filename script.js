@@ -23,7 +23,7 @@ let page8com = document.querySelector('#page8-com');
 let pageContentt = document.querySelector('.page8-boxx');
 
 
-const loadingpage=document.querySelector('.loading-page');
+const loadingpage = document.querySelector('.loading-page');
 
 
 setTimeout(() => {
