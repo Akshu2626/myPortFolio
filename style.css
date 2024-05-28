@@ -162,7 +162,7 @@ nav {
   font-weight: 300;
 }
 
-.social-box a{
+.social-box a {
   text-decoration: none;
 }
 
@@ -288,21 +288,27 @@ nav {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  width: 90%;
-  height: 6%;
-  padding: 1.2rem 0px;
+  
+  padding: .7rem 0px;
   background-color: var(--main-color);
   border-radius: 50px;
   margin-top: 20px;
   margin-bottom: 3rem;
 }
 
-.page1-btn a{
+.abc {
+  width: 90%;
+  height: 6%;
+  text-decoration: none;
+  color: black;
+}
+
+.page1-btn a {
   text-decoration: none;
   color: var(--secon-color);
 }
 
-.page1-btn a:hover{
+.page1-btn a:hover {
   color: var(--main-color);
 }
 
