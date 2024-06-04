@@ -76,7 +76,7 @@ menu.addEventListener('click', () => {
         flag = true;
     } else {
         menu.innerHTML = `<i class="ri-menu-line"></i>`;
-        slider.style.right = `-30vw`
+        slider.style.right = `-50vw`
         flag = false;
     }
 })
@@ -122,4 +122,18 @@ pageright.addEventListener('click', () => {
 
 })
 
-
+const mobilemenu = document.querySelector('.mobmenu');
+const mobileSlider = document.querySelector('.mobslide');
+let mobileFlag = false;
+mobilemenu.addEventListener('click', () => {
+    if (mobileFlag == false) {
+        mobilemenu.innerHTML = `<i class="ri-close-line"></i>`;
+        mobileSlider.style.left = `0px`
+        main.style.opacity = `10px`
+        mobileFlag = true;
+    } else {
+        mobilemenu.innerHTML = `<i class="ri-menu-line"></i>`;
+        mobileSlider.style.left = `-30rem`
+        mobileFlag = false;
+    }
+})

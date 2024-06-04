@@ -92,7 +92,7 @@ nav {
   position: absolute;
   background-color: black;
   top: 0px;
-  right: -40vw;
+  right: -50vw;
   transition: linear 0.2s;
   overflow-x: hidden;
   z-index: 90;
@@ -288,8 +288,8 @@ nav {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  
-  padding: .7rem 0px;
+
+  padding: 0.7rem 0px;
   background-color: var(--main-color);
   border-radius: 50px;
   margin-top: 20px;
@@ -1231,8 +1231,21 @@ textarea {
 /* For Mobile size code */
 
 @media (max-width: 800px) {
-  .slidebar {
+  /* .slidebar {
     display: none;
+  } */
+
+  .mobslide {
+    height: 100vh;
+    width: 18rem;
+    position: absolute;
+    background-color: black;
+    top: 0px;
+    left: -20rem;
+    transition: linear 0.2s;
+    overflow-x: hidden;
+    z-index: 90;
+    padding: 3rem 5rem 5rem;
   }
 
   #main {
