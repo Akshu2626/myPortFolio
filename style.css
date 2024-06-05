@@ -231,6 +231,18 @@ nav {
   height: 100%;
 }
 
+.page1-banner{
+  object-fit: cover;
+  filter: grayscale();
+  transition: .2s;
+}
+
+.page1-banner:hover{
+  filter: grayscale(0);
+  scale: 1.1;
+  
+}
+
 /* icons */
 
 .page1-icon {
